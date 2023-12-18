@@ -1,0 +1,18 @@
+{
+  "name": "schoolbell-test",
+  "version": "1.0.0",
+  "description": "2024 학교종이 프론트엔드 채용 과제",
+  "scripts": {
+    "test1": "node ./Q1/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ruderud/schoolbell-test.git"
+  },
+  "author": "KyungHun Jung(Ruderud)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ruderud/schoolbell-test/issues"
+  },
+  "homepage": "https://github.com/Ruderud/schoolbell-test#readme"
+}
