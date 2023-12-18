@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "2024 학교종이 프론트엔드 채용 과제",
   "scripts": {
-    "q1": "node ./Q1/index.js",
-    "Q1": "node ./Q1/index.js",
+    "q1": "node ./Q1/index.cjs",
+    "Q1": "node ./Q1/index.cjs",
     "q2": "http-server ./Q2 -p 8430 -o",
     "Q2": "http-server ./Q2 -p 8430 -o"
   },
