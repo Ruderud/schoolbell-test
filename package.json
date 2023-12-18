@@ -3,7 +3,10 @@
   "version": "1.0.0",
   "description": "2024 학교종이 프론트엔드 채용 과제",
   "scripts": {
-    "test1": "node ./Q1/index.js"
+    "q1": "node ./Q1/index.js",
+    "Q1": "node ./Q1/index.js",
+    "q2": "http-server ./Q2 -p 8430 -o",
+    "Q2": "http-server ./Q2 -p 8430 -o"
   },
   "repository": {
     "type": "git",
@@ -14,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/Ruderud/schoolbell-test/issues"
   },
-  "homepage": "https://github.com/Ruderud/schoolbell-test#readme"
+  "homepage": "https://github.com/Ruderud/schoolbell-test#readme",
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  }
 }
