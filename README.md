@@ -16,3 +16,5 @@ npm install
 npm run test${question-num}
 # ex - npm run test1
 ```
+
+실행에 문제 발생시 [Ruderud0055@gmail.com](Ruderud0055@gmail.com)로 연락바랍니다.
