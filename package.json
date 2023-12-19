@@ -6,7 +6,9 @@
     "q1": "node ./Q1/index.cjs",
     "Q1": "node ./Q1/index.cjs",
     "q2": "http-server ./Q2 -p 8430 -o",
-    "Q2": "http-server ./Q2 -p 8430 -o"
+    "Q2": "http-server ./Q2 -p 8430 -o",
+    "q3": "vite ./Q3",
+    "Q3": "vite ./Q3"
   },
   "repository": {
     "type": "git",
@@ -19,6 +21,18 @@
   },
   "homepage": "https://github.com/Ruderud/schoolbell-test#readme",
   "devDependencies": {
-    "http-server": "^14.1.1"
+    "http-server": "^14.1.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "@types/react": "^18.2.43",
+    "@types/react-dom": "^18.2.17",
+    "@typescript-eslint/eslint-plugin": "^6.14.0",
+    "@typescript-eslint/parser": "^6.14.0",
+    "@vitejs/plugin-react-swc": "^3.5.0",
+    "eslint": "^8.55.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.5",
+    "typescript": "^5.2.2",
+    "vite": "^5.0.8"
   }
 }
