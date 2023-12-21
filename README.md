@@ -61,9 +61,21 @@ React-typescript 환경에서 과제내용 구현.
 1. `vite`: SPA React 기본 세팅을 위한 라이브러리.
 2. `React-hook-form`: form 구현에 필요한 여러 hook들을 제공. (ex - inputValue validation등)
 3. `tailwindcss`: css 스타일링 라이브러리.
+4. `jest`: 테스트 라이브러리.
 
 제공된 사용예시 중 Validation에 대한 즉각적인 반응 요구사항이 있기에, 기본 `react-hook-form`의 `register.options.validation`내에서 문자열 길이 및 중복처리에 대한 validation 구현을 하지않음.
 
 대신 사용자의 입력 이벤트 발생시 입력사항을 즉각적으로 관찰가능한 `watch`메서드를 사용, 직접 전체 입력 데이터를 가져와서 이름의 중복(`checkNameDuplicated`), 이름의 최소길이(`checkNameLength`), 비밀번호의 최소길이(`checkPasswordLength`)를 체크하여 직접 에러를 발생시키도록 기능을 구현함.
 
 추가로 에러사항이 있거나 입력되지 않은 input tag존재시 Confirm 버튼을 비활성화 시키도록 하였음.
+
+테스트는 `jest`를 통해 진행하였으며, 다음과 같이 수행가능.
+
+```bash
+npm run test:q3 # 전체 테스트 진행
+npm run test:q3:e2e # end to end 테스트 진행
+npm run test:q3:unit # unit 테스트 진행
+```
+
+e2e테스트는 유저 foo, bar를 등록하는 전체 과정에 대한 테스트를 진행.
+unit테스트는 과제 조건사항들을 각각 커버하는지 여부에 대한 테스트를 진행.

@@ -163,6 +163,7 @@ function App() {
                 <h2 className="text-2xl font-bold">{`User - ${index}`}</h2>
                 <button
                   className="p-2 border-2 border-black"
+                  role="remove"
                   type="button"
                   onClick={() => {
                     remove(index);
@@ -171,21 +172,27 @@ function App() {
                   <CloseIcon />
                 </button>
               </div>
-              <label htmlFor="name">Name</label>
+              <label htmlFor={`userData.${index}.name`}>Name</label>
               <input
+                id={`userData.${index}.name`}
                 className={errors.userData?.[index]?.name ? invalidInputStyle : inputStyle}
                 type="text"
                 {...register(`userData.${index}.name`, { required: true })}
               />
               {errors.userData && errors.userData[index]?.name?.type === 'duplicate' && (
-                <p className="text-red-500">{errors.userData[index]?.name?.message}</p>
+                <p role="alert" className="text-red-500">
+                  {errors.userData[index]?.name?.message}
+                </p>
               )}
               {errors.userData && errors.userData[index]?.name?.type === 'minLength' && (
-                <p className="text-red-500">{errors.userData[index]?.name?.message}</p>
+                <p role="alert" className="text-red-500">
+                  {errors.userData[index]?.name?.message}
+                </p>
               )}
 
-              <label htmlFor="password">Password</label>
+              <label htmlFor={`userData.${index}.password`}>Password</label>
               <input
+                id={`userData.${index}.password`}
                 className={errors.userData?.[index]?.password ? invalidInputStyle : inputStyle}
                 type="password"
                 {...register(`userData.${index}.password`, { required: true })}

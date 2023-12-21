@@ -8,7 +8,10 @@
     "q2": "http-server ./Q2 -p 8430 -o",
     "Q2": "http-server ./Q2 -p 8430 -o",
     "q3": "vite ./Q3",
-    "Q3": "vite ./Q3"
+    "Q3": "vite ./Q3",
+    "test:q3": "jest --config ./Q3/jest.config.ts",
+    "test:q3:unit": "jest App.unit.test.tsx --config ./Q3/jest.config.ts",
+    "test:q3:e2e": "jest App.e2e.test.tsx --config ./Q3/jest.config.ts"
   },
   "repository": {
     "type": "git",
@@ -21,6 +24,11 @@
   },
   "homepage": "https://github.com/Ruderud/schoolbell-test#readme",
   "devDependencies": {
+    "@testing-library/jest-dom": "^6.1.5",
+    "@testing-library/react": "^14.1.2",
+    "@testing-library/user-event": "^14.5.1",
+    "@types/jest": "^29.5.11",
+    "@types/node": "^20.10.5",
     "@types/react": "^18.2.43",
     "@types/react-dom": "^18.2.17",
     "@typescript-eslint/eslint-plugin": "^6.14.0",
@@ -31,11 +39,15 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.5",
     "http-server": "^14.1.1",
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0",
     "postcss": "^8.4.32",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-hook-form": "^7.49.2",
     "tailwindcss": "^3.3.7",
+    "ts-jest": "^29.1.1",
+    "ts-node": "^10.9.2",
     "typescript": "^5.2.2",
     "vite": "^5.0.8"
   }
