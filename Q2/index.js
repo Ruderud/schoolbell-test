@@ -22,7 +22,6 @@ class FakejQuery {
     } else if (typeof style[0] === 'object') {
       const [styleObj] = style;
       Object.entries(styleObj).forEach(([key, value]) => {
-        console.log(key, value);
         this.$collction.style[key] = typeof value === 'number' ? `${value}px` : value;
       });
     }
