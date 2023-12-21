@@ -64,6 +64,6 @@ React-typescript 환경에서 과제내용 구현.
 
 제공된 사용예시 중 Validation에 대한 즉각적인 반응 요구사항이 있기에, 기본 `react-hook-form`의 `register.options.validation`내에서 문자열 길이 및 중복처리에 대한 validation 구현을 하지않음.
 
-대신 사용자가 입력사항을 즉각적으로 관찰가능한 `watch`메서드를 사용, 직접 전체 입력 데이터를 가져와서 이름의 중복(`checkNameDuplicated`), 이름의 최소길이(`checkNameLength`), 비밀번호의 최소길이(`pwdMinLenErrors`)를 체크하여 직접 에러를 발생시키도록 기능을 구현함.
+대신 사용자의 입력 이벤트 발생시 입력사항을 즉각적으로 관찰가능한 `watch`메서드를 사용, 직접 전체 입력 데이터를 가져와서 이름의 중복(`checkNameDuplicated`), 이름의 최소길이(`checkNameLength`), 비밀번호의 최소길이(`checkPasswordLength`)를 체크하여 직접 에러를 발생시키도록 기능을 구현함.
 
 추가로 에러사항이 있거나 입력되지 않은 input tag존재시 Confirm 버튼을 비활성화 시키도록 하였음.
